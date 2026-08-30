@@ -10,12 +10,6 @@ bergen-guide.md
 tromso-guide.md
 *-transcription.md
 
-# 試験対策（旅行と無関係の個人資料）
-exam-study-master.md
-build_exam_questions_docx.py
-build_exam_study_docx.py
-試験対策・過去問情報_*.docx
-
 # 作業ファイル
 __pycache__/
 strawberry_sesame_100_55.svg
