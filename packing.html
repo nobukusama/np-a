@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1b3a5c">
+<meta name="description" content="2026年9月のノルウェー旅行（大人4名）の持ち物チェックリスト。オーロラツアーとナットシェルの日程に合わせた項目つき。">
+<title>持ち物チェック | ノルウェー旅行 2026</title>
+<style>
+  :root {
+    --fjord-deep: #1b3a5c;
+    --fjord-blue: #2c5f8a;
+    --aurora-green: #4ecdc4;
+    --aurora-deep: #1c8a72;
+    --aurora-soft: #ddf2ec;
+    --snow: #f7fafc;
+    --cloud: #e8eef4;
+    --card: #ffffff;
+    --text: #2d3748;
+    --text-sub: #64748b;
+    --text-faint: #94a3b8;
+    --line: #dbe4ec;
+    --line-hard: #bccbd8;
+    --accent: #b4502a;
+    --accent-soft: #f9ebe4;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: var(--snow);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ===== ヘッダー ===== */
+  header {
+    background:
+      linear-gradient(160deg, rgba(27,58,92,0.90) 0%, rgba(44,95,138,0.82) 60%, rgba(78,205,196,0.55) 130%),
+      url("img/fjord.jpg") center 65% / cover no-repeat;
+    color: #fff;
+    padding: 52px 20px 46px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::after {
+    content: "";
+    position: absolute;
+    bottom: -1px; left: 0; right: 0;
+    height: 40px;
+    background: var(--snow);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 75% 60%, 55% 20%, 35% 70%, 15% 30%, 0 65%);
+  }
+  header h1 { font-size: 1.95rem; letter-spacing: 0.06em; margin-bottom: 8px; }
+  header p.subtitle { font-size: 0.98rem; opacity: 0.92; letter-spacing: 0.08em; }
+  .backlink {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 20px;
+    text-decoration: none; background: #fff; color: var(--fjord-deep);
+    font-weight: 700; font-size: 0.9rem; padding: 10px 20px; border-radius: 999px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25); position: relative; z-index: 2;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .backlink:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,0.3); }
+  .backlink .ar { color: var(--aurora-deep); font-weight: 800; }
+
+  .wrap { max-width: 660px; margin: 0 auto; padding: 0 16px 80px; }
+
+  /* ===== 名前と進捗 ===== */
+  .whoami {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 18px 16px; margin: 26px 0 0; box-shadow: 0 2px 10px rgba(27,58,92,.06);
+  }
+  .whoami label { display: block; font-size: 0.82rem; color: var(--text-sub); margin-bottom: 8px; }
+  .whoami input {
+    font: inherit; font-size: 1.05rem; font-weight: 700; color: var(--text);
+    background: var(--snow); border: 1px solid var(--line-hard); border-radius: 9px;
+    padding: 9px 13px; width: 100%; max-width: 240px;
+  }
+  .whoami input:focus-visible { outline: 2px solid var(--fjord-blue); outline-offset: 2px; }
+  .whoami .hint { font-size: 0.78rem; color: var(--text-faint); margin-top: 9px; line-height: 1.6; }
+
+  .prog { position: sticky; top: 0; z-index: 50; background: var(--snow); padding: 14px 0 12px; margin-bottom: 22px; border-bottom: 1px solid var(--line); }
+  .prog-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .prog-n { font-size: 1.35rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--fjord-deep); }
+  .prog-n small { font-size: 0.82rem; color: var(--text-sub); font-weight: 500; }
+  .prog-lbl { font-size: 0.8rem; color: var(--text-sub); }
+  .track { height: 8px; background: var(--cloud); border-radius: 99px; overflow: hidden; }
+  .fill { height: 100%; background: var(--aurora-deep); width: 0; transition: width .28s ease; }
+  @media (prefers-reduced-motion: reduce) { .fill { transition: none; } }
+
+  /* ===== セクション ===== */
+  section {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    margin: 0 0 22px; overflow: hidden; box-shadow: 0 2px 10px rgba(27,58,92,.06);
+  }
+  .sec-head {
+    display: flex; align-items: center; gap: 10px; padding: 14px 17px;
+    background: linear-gradient(180deg, var(--cloud), #eff4f8); border-bottom: 1px solid var(--line);
+  }
+  .sec-head h2 { font-size: 0.98rem; flex: 1; line-height: 1.4; color: var(--fjord-deep); }
+  .sec-when { font-size: 0.72rem; letter-spacing: .06em; color: var(--fjord-blue); font-weight: 700; white-space: nowrap; }
+  .sec-cnt { font-size: 0.76rem; color: var(--text-sub); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  .row { display: flex; gap: 13px; padding: 13px 17px; border-bottom: 1px solid var(--line); align-items: flex-start; }
+  .row:last-child { border-bottom: none; }
+  .row.done .lab { color: var(--text-faint); text-decoration: line-through; text-decoration-thickness: 1px; }
+  .txt { flex: 1; min-width: 0; }
+  .lab { font-size: 0.95rem; font-weight: 600; line-height: 1.5; }
+  .note { font-size: 0.82rem; color: var(--text-sub); line-height: 1.65; margin-top: 3px; }
+  .chip {
+    display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: .04em;
+    padding: 2px 8px; border-radius: 4px; margin-left: 7px; vertical-align: 2px; white-space: nowrap;
+  }
+  .chip.share { color: var(--fjord-blue); background: var(--cloud); border: 1px solid var(--line-hard); }
+  .chip.urgent { color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); }
+
+  .box {
+    width: 34px; height: 34px; flex-shrink: 0; border: 2px solid var(--line-hard); border-radius: 9px;
+    background: var(--card); cursor: pointer; display: grid; place-items: center; padding: 0;
+    color: transparent; transition: background .15s, border-color .15s;
+  }
+  .box svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 2.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .box[aria-pressed="true"] { background: var(--aurora-deep); border-color: var(--aurora-deep); color: #fff; }
+  .box:focus-visible { outline: 2px solid var(--fjord-blue); outline-offset: 2px; }
+
+  .foot-actions { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 4px; }
+  .btn {
+    font: inherit; font-size: 0.82rem; font-weight: 600; color: var(--text-sub); background: var(--card);
+    border: 1px solid var(--line-hard); border-radius: 9px; padding: 8px 15px; cursor: pointer;
+  }
+  .btn:hover { color: var(--text); border-color: var(--fjord-blue); }
+  .btn:focus-visible { outline: 2px solid var(--fjord-blue); outline-offset: 2px; }
+
+  .save-note {
+    font-size: 0.78rem; color: var(--text-faint); line-height: 1.75;
+    border-top: 1px solid var(--line); margin-top: 26px; padding-top: 16px;
+  }
+  .save-note strong { color: var(--text-sub); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>持ち物チェック</h1>
+  <p class="subtitle">ノルウェー 2026 ／ 9月16日 → 23日</p>
+  <a class="backlink" href="./"><span class="ar">🗓️</span> 旅程ガイドへ戻る <span class="ar">→</span></a>
+</header>
+
+<div class="wrap">
+
+  <div class="whoami">
+    <label for="me">名前を入れると、あなた専用のリストになります</label>
+    <input id="me" type="text" maxlength="12" placeholder="例：のぶ" autocomplete="off">
+    <p class="hint">チェックはこの端末に保存されます。家族はそれぞれの端末で開いて、自分の分をチェックしてください。</p>
+  </div>
+
+  <div class="prog">
+    <div class="prog-top">
+      <span class="prog-n" id="pnum">0<small>/0</small></span>
+      <span class="prog-lbl" id="plbl">準備前</span>
+    </div>
+    <div class="track"><div class="fill" id="pfill"></div></div>
+  </div>
+
+  <div id="list"></div>
+
+  <div class="foot-actions">
+    <button class="btn" id="reset" type="button">すべてのチェックを外す</button>
+  </div>
+
+  <p class="save-note">
+    <strong>保存について：</strong>チェックした内容はこの端末のブラウザに保存されます。同じ端末で開き直せば残っていますが、他の端末とは共有されません。<br>
+    <strong>ホーム画面に追加すると</strong>アプリのように開けます。iPhoneは共有ボタンから「ホーム画面に追加」、Androidはメニューから「ホーム画面に追加」。<br>
+    もとにした資料は旅程ガイドの各日程と持ち物メモです。防寒スーツとスノーブーツはツアーで貸与されるため、下に着るものだけを挙げています。
+  </p>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var DATA = [
+    { id:"pre", title:"出発前にやること", when:"〜9/16", items:[
+      { id:"shoe", share:true, urgent:true, lab:"靴のサイズを4名分まとめてツアー会社へ連絡",
+        note:"防寒スーツとスノーブーツは貸与されるが、事前にサイズを伝える必要がある。美咲は24.0cm。" },
+      { id:"etias", share:true, urgent:true, lab:"ETIASの要否をEU公式で最終確認",
+        note:"2026年に順次導入予定。必要ならオンラインで事前申請（少額の手数料）。" },
+      { id:"vjw", lab:"Visit Japan Web を登録",
+        note:"帰国時の入国審査・税関申告をQRコード化しておくとスムーズ。ひとりずつ登録が要る。" },
+      { id:"ins", share:true, lab:"海外旅行保険に加入",
+        note:"証券番号と緊急連絡先を控えておく。" },
+      { id:"hpcharge", lab:"ヘッドフォンを満充電にしておく",
+        note:"名古屋からヘルシンキ乗継ぎで長時間。ノイズキャンセリングは電池を使う。" }
+    ]},
+
+    { id:"doc", title:"書類・お金", when:"常に携行", items:[
+      { id:"pass", lab:"パスポート",
+        note:"シェンゲン協定国の出国予定日から3か月以上の残存期間が必要。" },
+      { id:"visa", lab:"VISAゴールドカード",
+        note:"付帯している旅行保険の条件も出発前に確認を。" },
+      { id:"touch", lab:"タッチ決済カード（予備をもう1枚）",
+        note:"カフェもスーパーもトイレもカード。1枚が使えないときの保険に。" },
+      { id:"coin", share:true, lab:"小銭 10〜20NOK",
+        note:"トイレはカード式が主流だが、一部にコイン投入式が残る。" },
+      { id:"eticket", share:true, lab:"eチケット控え・ホテル予約確認書",
+        note:"紙とスマホの両方にあると安心。" }
+    ]},
+
+    { id:"air", title:"機内で使うもの", when:"9/16・9/22", items:[
+      { id:"pillow", lab:"ヨギボー ネックピロー",
+        note:"往路は乗継ぎ含めて長丁場。復路9/22は17:20発の機中泊。" },
+      { id:"hp", lab:"ノイズキャンセリングヘッドフォン",
+        note:"充電ケーブルも一緒に。" },
+      { id:"mask", lab:"アイマスク・耳栓",
+        note:"機中泊があるので睡眠の質が変わる。" },
+      { id:"batt", lab:"モバイルバッテリー",
+        note:"預け荷物に入れられないので必ず手荷物へ。" }
+    ]},
+
+    { id:"aurora", title:"オーロラツアーの下に着るもの", when:"9/19・9/20", items:[
+      { id:"inner", lab:"保温インナー（上下）",
+        note:"防寒スーツは貸与される。その下に着るものは自前で用意する。" },
+      { id:"leg", lab:"裏起毛のレギンス" },
+      { id:"socks", lab:"厚手の靴下" },
+      { id:"glove", lab:"手袋" },
+      { id:"hat", lab:"ニット帽" },
+      { id:"neck", lab:"ネックウォーマー" },
+      { id:"kairo", lab:"カイロ",
+        note:"気温は0〜9℃ほどでも、海風で体感が大きく下がる。" },
+      { id:"snack", lab:"スナック",
+        note:"温かい食事は出るが、観測地に着く21時以降になることが多い。満腹でも空腹でもつらい。" },
+      { id:"passtour", lab:"当日パスポートを持つ",
+        note:"雲を避けてフィンランド国境を越えることがある。審査はないが携行は必須。" },
+      { id:"cam", share:true, lab:"カメラ＋三脚",
+        note:"スマホでは写しにくい。あると満足度が上がる。" }
+    ]},
+
+    { id:"wear", title:"衣類・雨対策", when:"全日程", items:[
+      { id:"jacket", lab:"防風・防水ジャケット",
+        note:"ベルゲンは年200日以上雨。傘より防水ウェアが実用的。" },
+      { id:"shoes", lab:"防水スニーカー",
+        note:"石畳と坂道が多い。滑りにくいものを。" },
+      { id:"layer", lab:"重ね着用の中間着",
+        note:"フィヨルドクルーズのデッキ、山岳部のミュルダール、トロムソは特に冷える。" }
+    ]},
+
+    { id:"elec", title:"電源まわり", when:"230V・50Hz", items:[
+      { id:"plug", share:true, lab:"Cタイプ変換プラグ",
+        note:"丸2ピンのB・Cタイプ。人数分あると夜の充電で取り合わない。" },
+      { id:"tap", share:true, lab:"延長タップ",
+        note:"ホテルのコンセントが少ないとき、プラグ1個で4人分まかなえる。" },
+      { id:"cable", lab:"充電ケーブル",
+        note:"スマホ・ヘッドフォン・カメラのぶん。" }
+    ]},
+
+    { id:"d18", title:"9/18 の手荷物に分けるもの", when:"ナットシェル", items:[
+      { id:"d18toilet", lab:"9/19朝の洗面用具と着替え",
+        note:"スーツケース3個は9/17の夜に預け、再会は9/18の23時頃。約24時間離れる。" },
+      { id:"d18warm", lab:"防寒着",
+        note:"フィヨルドクルーズのデッキと、山岳部のミュルダールは冷える。" },
+      { id:"d18med", lab:"常備薬",
+        note:"乗り換え4回はリュックと手提げだけで通過する。" }
+    ]},
+
+    { id:"misc", title:"薬・日用品", when:"", items:[
+      { id:"med", lab:"常備薬" },
+      { id:"sick", lab:"酔い止め", note:"9/18のフィヨルドクルーズ用。" },
+      { id:"wash", lab:"洗面用具" },
+      { id:"bag", share:true, lab:"折りたたみエコバッグ",
+        note:"スーパーの袋は有料。KIWI・Coop・Rema 1000をよく使う。" },
+      { id:"bottle", lab:"マイボトル",
+        note:"水道水がおいしく飲める。ミネラルウォーターを買わずに済む。" }
+    ]}
+  ];
+
+  var K_TICK = "np-packing-v2-ticks", K_NAME = "np-packing-v2-name";
+  var state = {};
+
+  function read(k, fb){ try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : fb; } catch(e){ return fb; } }
+  function write(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+
+  var loaded = read(K_TICK, {});
+  if (loaded && typeof loaded === "object") state = loaded;
+
+  var listEl = document.getElementById("list");
+  var nameEl = document.getElementById("me");
+  var headEl = document.querySelector("header h1");
+
+  var savedName = read(K_NAME, "");
+  if (typeof savedName === "string" && savedName) { nameEl.value = savedName; }
+  applyName();
+
+  function applyName(){
+    var n = (nameEl.value || "").trim();
+    headEl.textContent = n ? (n + "の持ち物") : "持ち物チェック";
+    document.title = (n ? n + "の持ち物" : "持ち物チェック") + " | ノルウェー旅行 2026";
+  }
+
+  nameEl.addEventListener("input", function(){
+    applyName();
+    write(K_NAME, nameEl.value);
+  });
+
+  function paintProgress(){
+    var done = 0, total = 0;
+    DATA.forEach(function(sec){
+      sec.items.forEach(function(it){ total++; if (state[it.id]) done++; });
+    });
+    var pct = total ? Math.round(done / total * 100) : 0;
+    document.getElementById("pnum").innerHTML = done + "<small>/" + total + "</small>";
+    document.getElementById("pfill").style.width = pct + "%";
+    document.getElementById("plbl").textContent =
+      pct === 0 ? "準備前" : (pct === 100 ? "準備完了" : pct + "% 完了");
+  }
+
+  function paintSection(sec){
+    var d = 0, t = 0;
+    sec.items.forEach(function(it){ t++; if (state[it.id]) d++; });
+    var el = document.querySelector('[data-cnt="' + sec.id + '"]');
+    if (el) el.textContent = d + " / " + t;
+  }
+
+  function paintRow(it){
+    var row = document.querySelector('[data-row="' + it.id + '"]');
+    if (!row) return;
+    var on = !!state[it.id];
+    row.classList.toggle("done", on);
+    var b = row.querySelector(".box");
+    if (b) b.setAttribute("aria-pressed", on ? "true" : "false");
+  }
+
+  function repaintAll(){
+    DATA.forEach(function(sec){
+      sec.items.forEach(paintRow);
+      paintSection(sec);
+    });
+    paintProgress();
+  }
+
+  DATA.forEach(function(sec){
+    var s = document.createElement("section");
+
+    var head = document.createElement("div");
+    head.className = "sec-head";
+    var h = document.createElement("h2");
+    h.textContent = sec.title;
+    head.appendChild(h);
+    if (sec.when) {
+      var w = document.createElement("span");
+      w.className = "sec-when";
+      w.textContent = sec.when;
+      head.appendChild(w);
+    }
+    var c = document.createElement("span");
+    c.className = "sec-cnt";
+    c.setAttribute("data-cnt", sec.id);
+    head.appendChild(c);
+    s.appendChild(head);
+
+    sec.items.forEach(function(it){
+      var row = document.createElement("div");
+      row.className = "row";
+      row.setAttribute("data-row", it.id);
+
+      var txt = document.createElement("div");
+      txt.className = "txt";
+
+      var lab = document.createElement("div");
+      lab.className = "lab";
+      lab.textContent = it.lab;
+      if (it.urgent) {
+        var cu = document.createElement("span");
+        cu.className = "chip urgent";
+        cu.textContent = "期限あり";
+        lab.appendChild(cu);
+      }
+      if (it.share) {
+        var cs = document.createElement("span");
+        cs.className = "chip share";
+        cs.textContent = "4人で1つ";
+        lab.appendChild(cs);
+      }
+      txt.appendChild(lab);
+
+      if (it.note) {
+        var n = document.createElement("div");
+        n.className = "note";
+        n.textContent = it.note;
+        txt.appendChild(n);
+      }
+      row.appendChild(txt);
+
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "box";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", it.lab);
+      b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5"></polyline></svg>';
+      b.addEventListener("click", function(){
+        if (state[it.id]) { delete state[it.id]; } else { state[it.id] = true; }
+        write(K_TICK, state);
+        paintRow(it);
+        paintSection(sec);
+        paintProgress();
+      });
+      row.appendChild(b);
+
+      s.appendChild(row);
+    });
+
+    listEl.appendChild(s);
+  });
+
+  repaintAll();
+
+  document.getElementById("reset").addEventListener("click", function(){
+    if (!window.confirm("この端末のチェックをすべて外します。よろしいですか？")) return;
+    state = {};
+    write(K_TICK, state);
+    repaintAll();
+  });
+})();
+</script>
+
+</body>
+</html>

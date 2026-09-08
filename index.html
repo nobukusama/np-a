@@ -75,6 +75,11 @@
   }
   .herolink:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,0.3); }
   .herolink .ar { color: var(--aurora-green); font-weight: 800; }
+  .herolink + .herolink { margin-left: 10px; }
+  @media (max-width: 520px) {
+    .herolink { margin-top: 14px; }
+    .herolink + .herolink { margin-left: 0; }
+  }
 
   /* ===== ナビゲーション ===== */
   nav {
@@ -967,6 +972,7 @@
 <header>
   <h1>ノルウェー旅行ガイド</h1>
   <a class="herolink" href="https://nobukusama.github.io/np-b/"><span class="ar">🏛️</span> 観光ガイド（見どころ・グルメ）へ <span class="ar">→</span></a>
+  <a class="herolink" href="packing.html"><span class="ar">🧳</span> 持ち物チェック <span class="ar">→</span></a>
 </header>
 
 <main>
